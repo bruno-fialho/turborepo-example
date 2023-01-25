@@ -6,7 +6,6 @@ interface TokensGridProps {
 }
 
 export function TokensGrid({ tokens, hasRemValue = false }: TokensGridProps) {
-  console.log('tokens', JSON.stringify(tokens, null, 2));
   return (
     <table className="tokens-grid">
       <thead>

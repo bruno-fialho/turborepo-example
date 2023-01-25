@@ -1,20 +1,19 @@
 {
-  "name": "tokens",
+  "name": "@turborepo/tokens",
   "version": "1.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts --external react-native",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --external react-native --watch",
+    "build": "tsup src/index.ts --format esm,cjs --dts --ignore-watch data",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch --ignore-watch data",
     "lint": "eslint src/**/*.ts* --fix"
   },
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config": "*",
-    "tsconfig": "*",
+    "@turborepo/eslint-config": "*",
+    "@turborepo/tsconfig": "*",
     "tsup": "^6.5.0",
-    "typescript": "^4.7.4"
+    "typescript": "^4.9.4"
   }
 }

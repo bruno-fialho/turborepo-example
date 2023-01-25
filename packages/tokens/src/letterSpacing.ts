@@ -1,4 +1,4 @@
-import tokens from '../tokens.json';
+import tokens from '../data/tokens.json';
 
 export const letterSpacing = {
   none: Number(tokens?.core?.letterSpacing?.none?.value.replace('%', '')),

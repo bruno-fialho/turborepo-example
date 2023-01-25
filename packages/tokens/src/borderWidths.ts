@@ -1,6 +1,6 @@
-import tokens  from '../tokens.json';
+import tokens  from '../data/tokens.json';
 
-export const borderWidth = {
+export const borderWidths = {
   xs: Number(tokens?.core?.borderWidths?.xs?.value),
   sm: Number(tokens?.core?.borderWidths?.sm?.value),
   md: Number(tokens?.core?.borderWidths?.md?.value),

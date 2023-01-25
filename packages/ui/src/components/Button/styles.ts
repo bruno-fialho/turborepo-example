@@ -1,4 +1,4 @@
-import { colors } from "tokens";
+import { colors } from "@turborepo/tokens";
 import styled from "styled-components/native";
 import { ButtonProps } from "./types";
 

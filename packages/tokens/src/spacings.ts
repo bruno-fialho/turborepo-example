@@ -1,4 +1,4 @@
-import tokens  from '../tokens.json';
+import tokens  from '../data/tokens.json';
 
 export const spacings = {
   1: Number(tokens?.core?.Spacings?.['1']?.value),

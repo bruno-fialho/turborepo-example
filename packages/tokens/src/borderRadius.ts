@@ -1,4 +1,4 @@
-import tokens  from '../tokens.json';
+import tokens  from '../data/tokens.json';
 
 export const borderRadius = {
   sm: Number(tokens?.core?.borderRadius?.sm?.value || 8),

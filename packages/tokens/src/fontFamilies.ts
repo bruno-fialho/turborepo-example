@@ -1,6 +1,6 @@
-import tokens  from '../tokens.json';
+import tokens  from '../data/tokens.json';
 
-export const fontFamily = {
+export const fontFamilies = {
   helvetica: {
     medium: (`${String(tokens?.core?.fontFamilies?.helvetica?.value)}-${String(tokens?.core?.fontWeights?.helvetica?.medium?.value)}`).replace(/\s/g, ''),
     regular: (`${String(tokens?.core?.fontFamilies?.helvetica?.value)}-${String(tokens?.core?.fontWeights?.helvetica?.regular?.value)}`).replace(/\s/g, ''),

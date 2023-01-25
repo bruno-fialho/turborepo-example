@@ -1,5 +1,4 @@
 {
-  "extends": "tsconfig/native.json",
-  "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+  "extends": "@turborepo/tsconfig/native.json",
+  "include": ["src"]
 }

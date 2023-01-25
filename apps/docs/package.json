@@ -1,6 +1,6 @@
 {
-  "name": "docs",
-  "version": "0.0.1",
+  "name": "@turborepo/docs",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -12,11 +12,15 @@
     "build": "build-storybook"
   },
   "dependencies": {
+    "@turborepo/tokens": "*",
+    "@turborepo/ui": "*",
     "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-native": "^0.71.1"
   },
   "devDependencies": {
+    "@turborepo/eslint-config": "*",
+    "@turborepo/tsconfig": "*",
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
     "@babel/runtime": "^7.20.0",
@@ -36,16 +40,12 @@
     "babel-jest": "^29.2.1",
     "babel-loader": "^8.3.0",
     "babel-plugin-react-native-web": "^0.18.10",
-    "eslint": "^7.32.0",
-    "eslint-config-custom": "*",
     "jest": "^29.2.1",
     "metro-react-native-babel-preset": "0.73.7",
-    "prettier": "^2.4.1",
     "react-dom": "^18.2.0",
     "react-native-web": "^0.18.10",
     "react-test-renderer": "18.2.0",
-    "tsconfig": "*",
-    "typescript": "^4.7.4"
+    "typescript": "^4.9.4"
   },
   "jest": {
     "preset": "react-native"

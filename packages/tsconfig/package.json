@@ -1,11 +1,6 @@
 {
-  "name": "tsconfig",
-  "version": "0.0.0",
+  "name": "@turborepo/tsconfig",
+  "version": "1.0.0",
   "private": true,
-  "files": [
-    "base.json",
-    "native.json",
-    "react.json",
-    "react-library.json"
-  ]
+  "license": "MIT"
 }

@@ -10,4 +10,7 @@ module.exports = {
     "@storybook/addon-react-native-web"
   ],
   "framework": "@storybook/react",
+  "features": {
+    storyStoreV7: true,
+  },
 }

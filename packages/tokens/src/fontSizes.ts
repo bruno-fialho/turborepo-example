@@ -1,6 +1,6 @@
-import tokens  from '../tokens.json';
+import tokens  from '../data/tokens.json';
 
-export const fontSize = {
+export const fontSizes = {
   0: Number(tokens?.core?.fontSizes?.[0]?.value),
   1: Number(tokens?.core?.fontSizes?.[1]?.value),
   2: Number(tokens?.core?.fontSizes?.[2]?.value),

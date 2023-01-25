@@ -1,7 +1,8 @@
-import { colors } from 'tokens'
-import { getContrast } from 'polished'
+import { colors } from "@turborepo/tokens"
+import { getContrast } from "polished"
 
 export function ColorsGrid() {
+  console.log('colors', JSON.stringify(colors, null, 2));
   return Object.entries(colors).map(([key, color1]) => {
     if (typeof(color1 === 'string')) {
       return (
