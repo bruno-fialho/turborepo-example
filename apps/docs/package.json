@@ -1,27 +1,53 @@
 {
   "name": "docs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 3001",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "lint": "eslint .",
+    "start": "react-native start",
+    "test": "jest",
+    "dev": "start-storybook -p 6006",
+    "build": "build-storybook"
   },
   "dependencies": {
-    "next": "^13.1.1",
+    "polished": "^4.2.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "ui": "*"
+    "react-native": "^0.71.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "eslint": "7.32.0",
+    "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.20.0",
+    "@babel/runtime": "^7.20.0",
+    "@storybook/addon-actions": "^6.5.15",
+    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addon-interactions": "^6.5.15",
+    "@storybook/addon-links": "^6.5.15",
+    "@storybook/addon-react-native-web": "^0.0.19",
+    "@storybook/builder-webpack4": "^6.5.15",
+    "@storybook/manager-webpack4": "^6.5.15",
+    "@storybook/react": "^6.5.15",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/jest": "^29.2.1",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-test-renderer": "^18.0.0",
+    "babel-jest": "^29.2.1",
+    "babel-loader": "^8.3.0",
+    "babel-plugin-react-native-web": "^0.18.10",
+    "eslint": "^7.32.0",
     "eslint-config-custom": "*",
+    "jest": "^29.2.1",
+    "metro-react-native-babel-preset": "0.73.7",
+    "prettier": "^2.4.1",
+    "react-dom": "^18.2.0",
+    "react-native-web": "^0.18.10",
+    "react-test-renderer": "18.2.0",
     "tsconfig": "*",
-    "@types/node": "^17.0.12",
-    "@types/react": "^18.0.22",
-    "@types/react-dom": "^18.0.7",
-    "typescript": "^4.5.3"
+    "typescript": "^4.7.4"
+  },
+  "jest": {
+    "preset": "react-native"
   }
 }

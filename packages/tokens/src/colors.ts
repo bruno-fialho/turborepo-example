@@ -1,0 +1,103 @@
+import tokens  from '../tokens.json';
+
+export const colors = {
+  transparent: 'transparent',
+  primary: {
+    light: tokens?.core?.Primary?.Light?.value || '#0f90ff',
+    main: tokens?.core?.Primary?.Main?.value || '#026FF4',
+    dark: tokens?.core?.Primary?.Dark?.value || '#0264dc',
+    opacity: {
+      '5p': tokens?.core?.Primary?.Opacity?.['5p']?.value || '#026ff40d',
+      '10p': tokens?.core?.Primary?.Opacity?.['10p']?.value || '#026ff41a',
+      '20p': tokens?.core?.Primary?.Opacity?.['20p']?.value || '#026ff433',
+      '30p': tokens?.core?.Primary?.Opacity?.['30p']?.value || '#026ff44d',
+      '50p': tokens?.core?.Primary?.Opacity?.['50p']?.value || '#026ff480',
+    },
+  },
+  warning: {
+    light: tokens?.core?.Warning?.Light?.value || '#f3ba2f',
+    main: tokens?.core?.Warning?.Main?.value || '#dba72a',
+    dark: tokens?.core?.Warning?.Dark?.value || '#b08e39',
+    opacity: {
+      '5p': tokens?.core?.Warning?.Opacity?.['5p']?.value || '#f3ba2f0d',
+      '10p': tokens?.core?.Warning?.Opacity?.['10p']?.value || '#f3ba2f1a',
+      '20p': tokens?.core?.Warning?.Opacity?.['20p']?.value || '#f3ba2f33',
+      '30p': tokens?.core?.Warning?.Opacity?.['30p']?.value || '#f3ba2f4d',
+      '50p': tokens?.core?.Warning?.Opacity?.['50p']?.value || '#f3ba2f80',
+    },
+  },
+  danger: {
+    light: tokens?.core?.Danger?.Light?.value || '#ff6378',
+    main: tokens?.core?.Danger?.Main?.value || '#e5596c',
+    dark: tokens?.core?.Danger?.Dark?.value || '#C85B69',
+    opacity: {
+      '5p': tokens?.core?.Danger?.Opacity?.['5p']?.value || '#ff63780d',
+      '10p': tokens?.core?.Danger?.Opacity?.['10p']?.value || '#ff63781a',
+      '20p': tokens?.core?.Danger?.Opacity?.['20p']?.value || '#ff637833',
+      '30p': tokens?.core?.Danger?.Opacity?.['30p']?.value || '#ff63784d',
+      '50p': tokens?.core?.Danger?.Opacity?.['50p']?.value || 'rgba(255,99,120,0.5)',
+    },
+  },
+  success: {
+    light: tokens?.core?.Success?.Light?.value || '#00e699',
+    main: tokens?.core?.Success?.Main?.value || '#00cf8a',
+    dark: tokens?.core?.Success?.Dark?.value || '#3AAC86',
+    opacity: {
+      '5p': tokens?.core?.Success?.Opacity?.['5p']?.value || 'rgba(0,207,138,0.05)',
+      '10p': tokens?.core?.Success?.Opacity?.['10p']?.value || 'rgba(0,207,138,0.1)',
+      '20p': tokens?.core?.Success?.Opacity?.['20p']?.value || 'rgba(0,207,138,0.2)',
+      '30p': tokens?.core?.Success?.Opacity?.['30p']?.value || 'rgba(0,207,138,0.3)',
+      '50p': tokens?.core?.Success?.Opacity?.['50p']?.value || 'rgba(0,207,138,0.5)',
+    },
+  },
+  white: {
+    light: tokens?.core?.White?.Light?.value || '#ffffff',
+    main: tokens?.core?.White?.Main?.value || '#f8f9fb',
+    dark: tokens?.core?.White?.Dark?.value || '#f3f4f9',
+    opacity: {
+      '5p': tokens?.core?.White?.Opacity?.['5p']?.value || 'rgba(248,249,251,0.05)',
+      '10p': tokens?.core?.White?.Opacity?.['10p']?.value || 'rgba(248,249,251,0.1)',
+      '20p': tokens?.core?.White?.Opacity?.['20p']?.value || '#f8f9fb33',
+      '30p': tokens?.core?.White?.Opacity?.['30p']?.value || '#f8f9fb4d',
+      '50p': tokens?.core?.White?.Opacity?.['50p']?.value || '#f8f9fb80',
+    },
+  },
+  gray: {
+    light: tokens?.core?.Gray?.Light?.value || '#c3c6db',
+    main: tokens?.core?.Gray?.Main?.value || '#9ea1b9',
+    dark: tokens?.core?.Gray?.Dark?.value || '#757893',
+    opacity: {
+      '5p': tokens?.core?.Gray?.Opacity?.['5p']?.value || 'rgba(158,161,185,0.05)',
+      '10p': tokens?.core?.Gray?.Opacity?.['10p']?.value || 'rgba(158,161,185,0.1)',
+      '20p': tokens?.core?.Gray?.Opacity?.['20p']?.value || '#9ea1b933',
+      '30p': tokens?.core?.Gray?.Opacity?.['30p']?.value || 'rgba(158,161,185,0.3)',
+      '50p': tokens?.core?.Gray?.Opacity?.['50p']?.value || 'rgba(158,161,185,0.5)',
+    },
+  },
+  black: {
+    light: tokens?.core?.Black?.Light?.value || '#272937',
+    main: tokens?.core?.Black?.Main?.value || '#272937',
+    dark: tokens?.core?.Black?.Dark?.value || '#000000',
+    opacity: {
+      '5p': tokens?.core?.Black?.Opacity?.['5p']?.value || '#2729370d',
+      '10p': tokens?.core?.Black?.Opacity?.['10p']?.value || '#2729371a',
+      '20p': tokens?.core?.Black?.Opacity?.['20p']?.value || '#27293733',
+      '30p': tokens?.core?.Black?.Opacity?.['30p']?.value || '#2729374d',
+      '50p': tokens?.core?.Black?.Opacity?.['50p']?.value || 'rgba(39, 41, 55, 0.5)',
+    },
+  },
+  others: {
+    type01: tokens?.core?.Others?.Type01?.value || '#FBC0A0',
+    type02: tokens?.core?.Others?.Type02?.value || '#9DE6F7',
+    type03: tokens?.core?.Others?.Type03?.value || '#627BB4',
+    type04: tokens?.core?.Others?.Type04?.value || '#55BCF2',
+    type05: tokens?.core?.Others?.Type05?.value || '#5D46B0',
+    type06: tokens?.core?.Others?.Type06?.value || '#6377FC',
+    type07: tokens?.core?.Others?.Type07?.value || '#3983FE',
+    type08: tokens?.core?.Others?.Type08?.value || '#FE829C',
+    type09: tokens?.core?.Others?.Type09?.value || '#E6BDE7',
+    type10: tokens?.core?.Others?.Type10?.value || '#41B2FF',
+    type11: tokens?.core?.Others?.Type11?.value || '#FE7275',
+    type12: tokens?.core?.Others?.Type12?.value || '#9AA9FE',
+  },
+}

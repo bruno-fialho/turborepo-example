@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "React Native",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "jsx": "react-native",
+    "module": "commonjs",
+    "lib": ["dom","ESNext"],
+    "target": "ESNext",
+    "types": ["jest", "styled-components-react-native"]
+  }
+}
